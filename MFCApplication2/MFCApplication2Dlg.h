@@ -3,7 +3,7 @@
 //
 
 #pragma once
-
+#include "HoverButton.h"
 
 // CMFCApplication2Dlg dialog
 class CMFCApplication2Dlg : public CDialogEx
@@ -32,6 +32,6 @@ protected:
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
 
-	CButton buttons[4];
+	CHoverButton buttons[4];
 	virtual BOOL OnCommand(WPARAM wParam, LPARAM lParam);
 };
